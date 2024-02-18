@@ -1,7 +1,7 @@
 import "./Todo.scss";
 const Todo = () => {
     return (
-        <div className='flex flex-col p-8 bg-bgBlackLight rounded-xl text-start gap-6'>
+        <div className='flex flex-col p-8 bg-bgBlackLight rounded-xl text-start gap-6 h-full w-full'>
             <h2 className='text-2xl font-semibold'>Today's Task</h2>
             <div className='flex flex-col gap-4'>
                 <div className='flex gap-2'>

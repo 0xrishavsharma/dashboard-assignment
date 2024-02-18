@@ -1,19 +1,23 @@
 import React from "react";
 
+// Icons
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+
 const Model = () => {
     const [modelOpen, setModelOpen] = React.useState<boolean>(false);
     return (
-        <div className=''>
+        <div className='relative shadow-2xl'>
             <button
-                className='rounded-full p-3 text-sm-slim bg-bgBlack'
+                className='flex items-center gap-2 rounded-full py-2 px-3 text-sm-slim bg-bgBlack'
                 onClick={() => setModelOpen(!modelOpen)}
             >
                 <span>Model</span>
-                <span>Model</span>
+                <span className='text-xs-slimmer'>
+                    {!modelOpen ? <IoIosArrowDown /> : <IoIosArrowUp />}
+                </span>
             </button>
             {modelOpen && (
-                <div className='flex flex-col gap-2 p-4 bg-bgBlackLight rounded-xl text-start'>
-                    <h2 className='text-xl font-semibold'>Model Name</h2>
+                <div className='absolute w-56 top-10 flex flex-col gap-2 p-4 bg-bgBlack shadow-lg rounded-xl text-start'>
                     <div className='flex flex-col gap-2'>
                         <div className='flex gap-2'>
                             <input type='checkbox' className='' />

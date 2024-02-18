@@ -1,0 +1,55 @@
+.color-picker-input {
+    appearance: none; /* Remove default styling */
+    width: 100%; /* Make the slider take up full width */
+    // height: 15px; /* Adjust as needed */
+    outline: none; /* Remove focus outline */
+    // opacity: 0.7; /* Make the slider slightly transparent */
+    transition: opacity 0.2s;
+
+    /* Custom track styles for Chrome */
+    &::-webkit-slider-runnable-track {
+        height: 16px;
+        border-radius: 10px;
+    }
+
+    /* Custom thumb styles for Chrome */
+    &::-webkit-slider-thumb {
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        background: #ffffff;
+        border: 2px solid white; /* Add white border */
+        cursor: pointer;
+        margin-top: -3px; /* You may need to adjust this based on the height */
+        -webkit-appearance: none; /* Remove default styling */
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75); /* Add box shadow */
+    }
+
+    /* Custom thumb styles for Firefox */
+    &::-moz-range-thumb {
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        background: #ffffff;
+        cursor: pointer;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75); /* Add box shadow */
+        border: 2px solid white; /* Add white border */
+    }
+
+    /* Custom thumb styles for IE/Edge */
+    &::-ms-thumb {
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        background: #ffffff;
+        cursor: pointer;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75); /* Add box shadow */
+        border: 2px solid white; /* Add white border */
+    }
+
+    /* Custom styles for IE/Edge */
+    &::-ms-track {
+        height: 15px;
+        border-radius: 10px;
+    }
+}

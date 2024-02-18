@@ -1,5 +1,3 @@
-import React from "react";
-
 const BottomBar = () => {
     return (
         <div className='flex justify-between'>

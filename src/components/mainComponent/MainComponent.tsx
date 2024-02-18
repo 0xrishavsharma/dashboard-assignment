@@ -13,7 +13,7 @@ const MainComponent = () => {
                 <div className='flex-[5]'>
                     <AiModels />
                 </div>
-                <div className='flex-1'>
+                <div className='flex-[2]'>
                     <ClockComponent />
                 </div>
             </div>

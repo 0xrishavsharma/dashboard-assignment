@@ -19,7 +19,7 @@ module.exports = {
         extend: {
             colors: {
                 // custom colors
-                // primary: "#6466F2",
+                primary: "#6466F2",
                 bgBlack: "#17171A",
                 bgBlackLight: "#201F23",
                 bgBlackLighter: "#26252A",
@@ -30,12 +30,12 @@ module.exports = {
                 // foreground: "hsl(var(--foreground))",
                 background: "#0000",
                 foreground: "#ffffff",
-                primary: {
-                    DEFAULT: "hsl(var(--primary))",
-                    foreground: "hsl(var(--primary-foreground))",
-                    // DEFAULT: "#6466F2",
-                    // foreground: "#ffffff",
-                },
+                // primary: {
+                //     DEFAULT: "hsl(var(--primary))",
+                //     foreground: "hsl(var(--primary-foreground))",
+                //     // DEFAULT: "#6466F2",
+                //     // foreground: "#ffffff",
+                // },
                 secondary: {
                     DEFAULT: "hsl(var(--secondary))",
                     foreground: "hsl(var(--secondary-foreground))",
@@ -86,6 +86,8 @@ module.exports = {
             },
             fontSize: {
                 "sm-slim": "13px",
+                "xs-slim": "11px",
+                "xs-slimmer": "10px",
             },
         },
     },

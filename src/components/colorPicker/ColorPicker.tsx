@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import OpacityPicker from "../opacityPicker/OpacityPicker.jsx";
 import ColorPickerSlider from "../colorPickerSlider/ColorPickerSlider";
 

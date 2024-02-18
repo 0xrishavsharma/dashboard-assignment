@@ -40,13 +40,50 @@ const AiModels = () => {
     // ];
 
     return (
-        <div className='p-1 bg-bgBlackLighter rounded-xl'>
+        <div className='p-1 bg-bgBlackLighter rounded-xl h-full'>
             <div className='flex flex-col gap-6 w-full bg-bgBlackLight rounded-xl p-7'>
                 <h2 className='text-2xl font-semibold'>AI Models</h2>
                 <div className='flex gap-3'>
                     <Model />
                     <Model />
                     <Model />
+                </div>
+                <div>
+                    <table>
+                        <thead className='text-start'>
+                            <tr className='text-white/60 text-start'>
+                                <th className='text-xs font-light flex-[5] text-start'>
+                                    Model
+                                </th>
+                                <th className='text-xs font-light flex-[2]'>
+                                    Versions
+                                </th>
+                                <th className='text-xs font-light flex-[2]'>
+                                    License
+                                </th>
+                                <th className='text-xs font-light flex-[2]'>
+                                    Contributors
+                                </th>
+                                <th className='text-xs font-light flex-[2]'>
+                                    Rating
+                                </th>
+                            </tr>
+                        </thead>
+                        <div className='bg-bgBlackLighter w-full'>
+                            {Array.from({ length: 15 }, (i) => i).map(
+                                (_, index) => {
+                                    return (
+                                        <tbody key={index}>
+                                            <p>
+                                                Lorem ipsum dolor, sit amet
+                                                consectetur
+                                            </p>
+                                        </tbody>
+                                    );
+                                }
+                            )}
+                        </div>
+                    </table>
                 </div>
             </div>
         </div>
